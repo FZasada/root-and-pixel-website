@@ -109,18 +109,6 @@ body {
   color: transparent;
 }
 
-@utility text-gradient-soft {
-  background-image: linear-gradient(
-    110deg,
-    #c4b8ff 0%,
-    var(--color-accent-light) 55%,
-    var(--color-blue-glow) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
 @utility bg-premium-gradient {
   background-image: linear-gradient(
     135deg,

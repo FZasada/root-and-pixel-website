@@ -4,11 +4,6 @@
       <stop stop-color="#05070B"/>
       <stop offset="1" stop-color="#0B0E17"/>
     </linearGradient>
-    <linearGradient id="g" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#7C5CFF"/>
-      <stop offset="0.5" stop-color="#9D7BFF"/>
-      <stop offset="1" stop-color="#6EA8FE"/>
-    </linearGradient>
     <radialGradient id="glow" cx="0.7" cy="0.3" r="0.6">
       <stop stop-color="#7C5CFF" stop-opacity="0.35"/>
       <stop offset="1" stop-color="#7C5CFF" stop-opacity="0"/>
@@ -17,8 +12,8 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
   <rect x="80" y="430" width="1040" height="1" fill="#ffffff" opacity="0.08"/>
-  <rect x="86" y="160" width="44" height="44" rx="13" fill="url(#g)"/>
-  <circle cx="108" cy="182" r="8" fill="#fff"/>
+  <rect x="86" y="160" width="44" height="44" rx="13" fill="#ffffff"/>
+  <text x="108" y="183" text-anchor="middle" dominant-baseline="central" fill="#05070B" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="-0.5">R&amp;P</text>
   <text x="150" y="192" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Root &amp; Pixel</text>
   <text x="86" y="300" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">We build mobile apps</text>
   <text x="86" y="384" fill="url(#g)" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">people love.</text>
