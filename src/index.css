@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --color-ink: #05070b;
+  --color-ink-950: #07090f;
+  --color-ink-900: #0a0d14;
+  --color-ink-800: #10131c;
+  --color-ink-700: #171b27;
+  --color-ink-600: #232838;
+
+  --color-muted: #a1a1aa;
+  --color-faint: #71717a;
+
+  --color-accent: #7c5cff;
+  --color-accent-light: #9d7bff;
+  --color-accent-dark: #5b3ee0;
+  --color-blue-glow: #6ea8fe;
+
+  --color-surface: #ffffff;
+  --color-mist: #f6f7f9;
+  --color-line: #ececf0;
+
+  --shadow-card:
+    0 1px 2px rgb(16 19 28 / 0.04), 0 8px 24px -12px rgb(16 19 28 / 0.1);
+  --shadow-card-hover:
+    0 2px 4px rgb(16 19 28 / 0.05), 0 20px 40px -16px rgb(16 19 28 / 0.16);
+  --shadow-phone:
+    0 24px 48px -12px rgb(5 7 11 / 0.35), 0 8px 16px -8px rgb(5 7 11 / 0.25);
+
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  @apply bg-ink text-white font-sans antialiased;
+  overflow-x: clip;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgb(124 92 255 / 0.35);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #232838;
+  border-radius: 8px;
+  border: 2px solid #05070b;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@utility container-shell {
+  @apply mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10;
+}
+
+@utility text-gradient {
+  background-image: linear-gradient(
+    100deg,
+    var(--color-accent) 0%,
+    var(--color-accent-light) 48%,
+    var(--color-blue-glow) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility text-gradient-soft {
+  background-image: linear-gradient(
+    110deg,
+    #c4b8ff 0%,
+    var(--color-accent-light) 55%,
+    var(--color-blue-glow) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-premium-gradient {
+  background-image: linear-gradient(
+    135deg,
+    var(--color-accent) 0%,
+    var(--color-accent-dark) 100%
+  );
+}

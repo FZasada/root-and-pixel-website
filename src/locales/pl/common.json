@@ -1,0 +1,543 @@
+{
+  "brand": {
+    "name": "Root & Pixel",
+    "tagline": "Nasze własne aplikacje. Tworzone z dbałością.",
+    "description": "Rozwijamy własne aplikacje mobilne z intuicyjnym designem, czystym kodem i podejściem security-first."
+  },
+  "nav": {
+    "home": "Start",
+    "apps": "Aplikacje",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "cta": "Kontakt",
+    "a11yMain": "Nawigacja główna",
+    "skipToContent": "Przejdź do treści"
+  },
+  "learnMore": "Dowiedz się więcej",
+  "hero": {
+    "badge": "Niezależne studio aplikacji",
+    "title": "Tworzymy aplikacje mobilne, które ludzie kochają.",
+    "titleAccent": "kochają.",
+    "support": "Root & Pixel rozwija własne aplikacje z intuicyjnym designem, czystym kodem i podejściem security-first. Bez usług – tylko nasze własne produkty.",
+    "primaryCta": "Zobacz nasze aplikacje",
+    "secondaryCta": "O nas",
+    "checks": [
+      "Tworzone w domu",
+      "Bezpieczne z założenia",
+      "Prywatność przede wszystkim"
+    ],
+    "phone": {
+      "greeting": "Dzień dobry,",
+      "name": "Florian",
+      "memoriesCount": "128",
+      "memoriesLabel": "zapisanych wspomnień",
+      "recentTitle": "Ostatnie wspomnienia",
+      "memory1Title": "Podróż do Norwegii",
+      "memory1Date": "12 sie 2024",
+      "memory2Title": "Zachód słońca w Japonii",
+      "memory2Date": "3 sie 2024",
+      "statsTitle": "Statystyki",
+      "statsPeriod": "Ten rok",
+      "statsValue": "84",
+      "statsLabel": "wspomnienia",
+      "statsTags": "Najczęstsze tagi",
+      "statsTag1": "Podróże",
+      "statsTag2": "Natura",
+      "statsTag3": "Przyjaciele",
+      "statsTag4": "Rodzina"
+    }
+  },
+  "tech": {
+    "title": "Technologie, którym ufamy"
+  },
+  "apps": {
+    "eyebrow": "Nasze aplikacje",
+    "title": "Produkty, z których jesteśmy dumni",
+    "link": "Zobacz wszystkie aplikacje",
+    "nomi": {
+      "name": "nomi",
+      "tagline": "Przechowuj wspomnienia bezpiecznie i przeżywaj je ponownie w każdej chwili.",
+      "description": "nomi to Twoje prywatne miejsce na wspomnienia – zdjęcia, chwile i historie w jednym bezpiecznym miejscu. Zachowaj to, co naprawdę ważne, i wracaj do tego, kiedy chcesz.",
+      "overviewLink": "Przegląd",
+      "privacyLink": "Prywatność",
+      "supportLink": "Wsparcie",
+      "features": [
+        {
+          "title": "Zachowuj wspomnienia",
+          "text": "Przechowuj zdjęcia i chwile jako prywatne wspomnienia – bezpiecznie i trwale."
+        },
+        {
+          "title": "Przeżywaj ponownie",
+          "text": "Przeglądaj swoją przeszłość i pozwól ulubionym chwilom wrócić do życia."
+        },
+        {
+          "title": "Prywatnie i bezpiecznie",
+          "text": "Twoje dane należą do Ciebie. Szyfrowane, prywatne i bez reklam."
+        }
+      ],
+      "benefits": [
+        "Prywatność z założenia",
+        "Piękny, minimalistyczny interfejs",
+        "Działa offline",
+        "Szybka i niezawodna"
+      ],
+      "ctaTitle": "Gotowy, by zachować swoje wspomnienia?",
+      "ctaSub": "Pobierz nomi i zacznij już dziś.",
+      "privacy": {
+        "eyebrow": "Prywatność",
+        "title": "Twoje wspomnienia pozostają Twoje",
+        "subtitle": "nomi jest zbudowane tak, aby chwile, które zachowujesz, należały tylko do Ciebie.",
+        "sections": [
+          {
+            "heading": "Prywatność z założenia",
+            "text": "Twoje wspomnienia żyją w prywatnej przestrzeni stworzonej tylko dla Ciebie. Nic nie jest udostępniane, profilowane ani sprzedawane."
+          },
+          {
+            "heading": "Szyfrowanie",
+            "text": "Twoje dane są szyfrowane podczas przesyłania i w spoczynku, więc tylko Ty masz dostęp do swoich wspomnień."
+          },
+          {
+            "heading": "Brak śledzenia i reklam",
+            "text": "nomi nie zawiera trackerów ani reklam. Nie profilujemy Cię i nie sprzedajemy Twoich danych."
+          },
+          {
+            "heading": "Twoje dane, Twoja kontrola",
+            "text": "Eksportuj lub usuwaj swoje wspomnienia w dowolnym momencie. Twoje dane pozostają pod Twoją kontrolą."
+          }
+        ],
+        "ctaTitle": "Pytania o prywatność?",
+        "ctaSub": "Nasz zespół chętnie pomoże we wszystkim, co dotyczy Twoich danych.",
+        "ctaLabel": "Skontaktuj się z nami"
+      },
+      "support": {
+        "eyebrow": "Wsparcie",
+        "title": "Służymy pomocą w kwestii nomi",
+        "subtitle": "Znajdź odpowiedzi, zgłoś problemy i skontaktuj się bezpośrednio z naszym zespołem.",
+        "sections": [
+          {
+            "heading": "Pierwsze kroki",
+            "text": "Skonfiguruj konto i dodaj pierwsze wspomnienia w zaledwie kilku krokach."
+          },
+          {
+            "heading": "Konto i dane",
+            "text": "Zarządzaj kontem lub eksportuj i usuwaj wspomnienia, kiedy tylko chcesz."
+          },
+          {
+            "heading": "Zgłaszanie problemów",
+            "text": "Coś nie działa tak, jak powinno? Daj nam znać, a szybko to naprawimy."
+          }
+        ],
+        "ctaTitle": "Nadal potrzebujesz pomocy?",
+        "ctaSub": "Napisz do nas, a wkrótce odpowiemy.",
+        "ctaLabel": "Napisz do wsparcia",
+        "faq": {
+          "items": [
+            {
+              "question": "Jak utworzyć konto?",
+              "answer": "Otwórz nomi i postępuj zgodnie z instrukcjami na ekranie. Potrzebujesz tylko adresu e-mail i bezpiecznego hasła."
+            },
+            {
+              "question": "Czy moje wspomnienia są prywatne?",
+              "answer": "Tak. Twoje wspomnienia są szyfrowane i nigdy nie są udostępniane, profilowane ani sprzedawane. Należą do Ciebie."
+            },
+            {
+              "question": "Czy mogę wyeksportować lub usunąć wspomnienia?",
+              "answer": "Oczywiście. Możesz wyeksportować lub usunąć swoje wspomnienia w dowolnym momencie w ustawieniach konta."
+            }
+          ]
+        }
+      }
+    },
+    "fittrack": {
+      "name": "FitTrack",
+      "tagline": "Łączymy fitness, postępy i motywację.",
+      "description": "FitTrack sprawia, że Twój trening jest mierzalny. Śledź treningi, postępy i nawyki w jednej przejrzystej, motywującej aplikacji.",
+      "overviewLink": "Przegląd",
+      "privacyLink": "Prywatność",
+      "supportLink": "Wsparcie",
+      "features": [
+        {
+          "title": "Śledź postępy",
+          "text": "Treningi i postępy w jednym miejscu – od pierwszej sesji."
+        },
+        {
+          "title": "Wyznaczaj cele",
+          "text": "Osobiste cele, codzienne nawyki i mierzalne rezultaty."
+        },
+        {
+          "title": "Nie trać motywacji",
+          "text": "Przejrzyste statystyki i nagrody, które trzymają Cię w grze."
+        }
+      ],
+      "benefits": [
+        "Wszystkie treningi w jednej aplikacji",
+        "Zrozumiałe statystyki",
+        "Osobiste cele",
+        "Działa offline"
+      ],
+      "ctaTitle": "Rób postępy, które widzisz.",
+      "ctaSub": "FitTrack już wkrótce. Dołącz do premiery.",
+      "privacy": {
+        "eyebrow": "Prywatność",
+        "title": "Twoje postępy pozostają prywatne",
+        "subtitle": "FitTrack jest zbudowany wokół Twoich danych – pozostają Twoje.",
+        "sections": [
+          {
+            "heading": "Prywatność z założenia",
+            "text": "Twoje dane treningowe pozostają w prywatnej przestrzeni. Nic nie jest udostępniane, profilowane ani sprzedawane."
+          },
+          {
+            "heading": "Szyfrowanie",
+            "text": "Twoje dane są szyfrowane podczas przesyłania i w spoczynku, więc tylko Ty widzisz swoje treningi."
+          },
+          {
+            "heading": "Brak śledzenia i reklam",
+            "text": "FitTrack nie zawiera trackerów ani reklam. Nie profilujemy Cię i nie sprzedajemy Twoich danych."
+          },
+          {
+            "heading": "Twoje dane, Twoja kontrola",
+            "text": "Eksportuj lub usuwaj swoje dane treningowe w dowolnym momencie. Twoje dane pozostają pod Twoją kontrolą."
+          }
+        ],
+        "ctaTitle": "Pytania o prywatność?",
+        "ctaSub": "Nasz zespół chętnie pomoże we wszystkim, co dotyczy Twoich danych.",
+        "ctaLabel": "Skontaktuj się z nami"
+      },
+      "support": {
+        "eyebrow": "Wsparcie",
+        "title": "Służymy pomocą w kwestii FitTrack",
+        "subtitle": "Znajdź odpowiedzi, zgłoś problemy i skontaktuj się bezpośrednio z naszym zespołem.",
+        "sections": [
+          {
+            "heading": "Pierwsze kroki",
+            "text": "Skonfiguruj konto i zacznij śledzić pierwszy trening w mgnieniu oka."
+          },
+          {
+            "heading": "Cele i statystyki",
+            "text": "Dowiedz się, jak wyznaczać cele i odczytywać postępy na pierwszy rzut oka."
+          },
+          {
+            "heading": "Zgłaszanie problemów",
+            "text": "Coś nie działa tak, jak powinno? Daj nam znać, a szybko to naprawimy."
+          }
+        ],
+        "ctaTitle": "Nadal potrzebujesz pomocy?",
+        "ctaSub": "Napisz do nas, a wkrótce odpowiemy.",
+        "ctaLabel": "Napisz do wsparcia",
+        "faq": {
+          "items": [
+            {
+              "question": "Jak rozpocząć śledzenie treningu?",
+              "answer": "Otwórz FitTrack, dotknij przycisku plusa i wybierz rodzaj treningu. Twoja pierwsza sesja zaczyna się od razu."
+            },
+            {
+              "question": "Czy moje dane treningowe są prywatne?",
+              "answer": "Tak. Twoje dane treningowe są szyfrowane i nigdy nie są udostępniane, profilowane ani sprzedawane."
+            },
+            {
+              "question": "Czy FitTrack działa offline?",
+              "answer": "Tak. FitTrack jest zaprojektowany do pracy offline, więc możesz trenować w dowolnym miejscu."
+            }
+          ]
+        }
+      }
+    },
+    "finwhiz": {
+      "name": "FinWhiz",
+      "tagline": "Miej swoje finanse na oku i podejmuj lepsze decyzje.",
+      "description": "FinWhiz daje Ci jasność nad Twoimi finansami. Wydatki, budżety i cele – przejrzyście, zrozumiale i inteligentnie.",
+      "overviewLink": "Przegląd",
+      "privacyLink": "Prywatność",
+      "supportLink": "Wsparcie",
+      "features": [
+        {
+          "title": "Zrozum swoje wydatki",
+          "text": "Na pierwszy rzut oka zobaczysz, na co idą Twoje pieniądze – automatycznie kategoryzowane."
+        },
+        {
+          "title": "Planuj budżety",
+          "text": "Ustaw budżety pasujące do Twojego życia i trzymaj się planu."
+        },
+        {
+          "title": "Podejmuj lepsze decyzje",
+          "text": "Jasne wnioski pomagają podejmować właściwe decyzje finansowe."
+        }
+      ],
+      "benefits": [
+        "Automatyczna kategoryzacja",
+        "Intuicyjne budżety",
+        "Prywatność przede wszystkim",
+        "Szyfrowanie"
+      ],
+      "ctaTitle": "Przejmij kontrolę nad swoimi finansami.",
+      "ctaSub": "FinWhiz już wkrótce. Dołącz do premiery.",
+      "privacy": {
+        "eyebrow": "Prywatność",
+        "title": "Twoje finanse pozostają poufne",
+        "subtitle": "FinWhiz traktuje Twoje dane finansowe z najwyższą starannością.",
+        "sections": [
+          {
+            "heading": "Poufność z założenia",
+            "text": "Twoje dane finansowe pozostają w prywatnej przestrzeni. Nic nie jest udostępniane, profilowane ani sprzedawane."
+          },
+          {
+            "heading": "Silne szyfrowanie",
+            "text": "Twoje dane są szyfrowane podczas przesyłania i w spoczynku, więc tylko Ty widzisz swoje finanse."
+          },
+          {
+            "heading": "Minimalne dane",
+            "text": "Przechowujemy tylko to, co potrzebne do działania aplikacji – nigdy więcej."
+          },
+          {
+            "heading": "Twoje dane, Twoja kontrola",
+            "text": "Eksportuj lub usuwaj swoje dane finansowe w dowolnym momencie. Twoje dane pozostają pod Twoją kontrolą."
+          }
+        ],
+        "ctaTitle": "Pytania o prywatność?",
+        "ctaSub": "Nasz zespół chętnie pomoże we wszystkim, co dotyczy Twoich danych.",
+        "ctaLabel": "Skontaktuj się z nami"
+      },
+      "support": {
+        "eyebrow": "Wsparcie",
+        "title": "Służymy pomocą w kwestii FinWhiz",
+        "subtitle": "Znajdź odpowiedzi, zgłoś problemy i skontaktuj się bezpośrednio z naszym zespołem.",
+        "sections": [
+          {
+            "heading": "Pierwsze kroki",
+            "text": "Skonfiguruj konto i połącz swoje finanse w zaledwie kilku krokach."
+          },
+          {
+            "heading": "Budżety i wnioski",
+            "text": "Dowiedz się, jak ustawiać budżety i rozumieć wydatki na pierwszy rzut oka."
+          },
+          {
+            "heading": "Zgłaszanie problemów",
+            "text": "Coś nie działa tak, jak powinno? Daj nam znać, a szybko to naprawimy."
+          }
+        ],
+        "ctaTitle": "Nadal potrzebujesz pomocy?",
+        "ctaSub": "Napisz do nas, a wkrótce odpowiemy.",
+        "ctaLabel": "Napisz do wsparcia",
+        "faq": {
+          "items": [
+            {
+              "question": "Jak połączyć swoje finanse?",
+              "answer": "Otwórz FinWhiz i postępuj zgodnie z procesem konfiguracji, aby bezpiecznie połączyć konta w kilku krokach."
+            },
+            {
+              "question": "Czy moje dane finansowe są poufne?",
+              "answer": "Tak. Twoje dane finansowe są szyfrowane i traktowane z najwyższą poufnością."
+            },
+            {
+              "question": "Czy mogę wyeksportować lub usunąć dane?",
+              "answer": "Tak. Możesz wyeksportować lub usunąć swoje dane finansowe w dowolnym momencie w ustawieniach konta."
+            }
+          ]
+        }
+      }
+    }
+  },
+  "appsOverview": {
+    "eyebrow": "Nasze aplikacje",
+    "title": "Produkty stworzone z pasją.",
+    "subtitle": "Rozwijamy własne aplikacje od pierwszego szkicu po premierę – i prezentujemy je tutaj."
+  },
+  "appPage": {
+    "tabsLabel": "Sekcje aplikacji",
+    "featuresHeading": "Dlaczego {app}?",
+    "benefitsHeading": "Co otrzymujesz",
+    "techHeading": "Technologia",
+    "techNote": "Każdą aplikację budujemy na solidnym, bezpiecznym fundamencie. Nasza wewnętrzna wiedza z zakresu cyberbezpieczeństwa sprawia, że bezpieczeństwo to część projektu, a nie dodatek.",
+    "notifyMe": "Powiadom o premierze"
+  },
+  "supportFaq": {
+    "eyebrow": "FAQ",
+    "title": "Często zadawane pytania"
+  },
+  "supportForm": {
+    "eyebrow": "Skontaktuj się ze wsparciem",
+    "title": "Wyślij nam wiadomość",
+    "subtitle": "Napisz wiadomość o {app} poniżej i otwórz ją w swojej aplikacji pocztowej. Wkrótce odpowiemy.",
+    "email": {
+      "name": "Twoje imię",
+      "email": "Twój e-mail",
+      "topic": "Temat",
+      "message": "Twoja wiadomość"
+    },
+    "topics": {
+      "general": "Pytanie ogólne",
+      "bug": "Błąd lub problem",
+      "account": "Konto i dane",
+      "suggestion": "Sugestia",
+      "other": "Inne"
+    },
+    "placeholderName": "Twoje imię",
+    "placeholderMessage": "Opowiedz nam, co się dzieje…",
+    "submit": "Otwórz aplikację pocztową",
+    "note": "To otwiera Twoją aplikację pocztową z gotową wiadomością do wysłania.",
+    "sent": "Twoja wiadomość jest gotowa — wystarczy kliknąć wyślij w aplikacji pocztowej."
+  },
+  "security": {
+    "banner": {
+      "label": "Bezpieczeństwo",
+      "badge": "Bezpieczeństwo przede wszystkim",
+      "title": "Bezpieczne z założenia — z ekspertem ds. cyberbezpieczeństwa w zespole",
+      "text": "Każda aplikacja, którą tworzymy, ma wbudowane bezpieczeństwo i prywatność od początku — szyfrowanie, brak śledzenia i dedykowany ekspert ds. cyberbezpieczeństwa w naszym zespole.",
+      "cta": "O nas"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Root & Pixel — Nasze własne aplikacje mobilne",
+      "description": "Root & Pixel rozwija własne aplikacje mobilne z intuicyjnym designem, czystym kodem i podejściem security-first."
+    },
+    "apps": {
+      "title": "Aplikacje i produkty — Root & Pixel",
+      "description": "Poznaj aplikacje Root & Pixel: nomi, FitTrack i FinWhiz – produkty mobilne tworzone z dbałością o szczegóły."
+    },
+    "nomi": {
+      "title": "nomi — Zachowuj wspomnienia | Root & Pixel",
+      "description": "nomi to Twoje prywatne miejsce na wspomnienia. Przechowuj zdjęcia, chwile i historie bezpiecznie i przeżywaj je ponownie."
+    },
+    "fittrack": {
+      "title": "FitTrack — Fitness i postępy | Root & Pixel",
+      "description": "FitTrack łączy fitness, postępy i motywację. Śledź treningi i cele w jednej przejrzystej aplikacji."
+    },
+    "finwhiz": {
+      "title": "FinWhiz — Miej finanse na oku | Root & Pixel",
+      "description": "FinWhiz daje Ci jasność nad finansami. Wydatki, budżety i cele – przejrzyście, zrozumiale i inteligentnie."
+    },
+    "appPrivacy": "Prywatność — {app} | Root & Pixel",
+    "appPrivacyDesc": "Jak {app} chroni Twoje dane – prywatnie z założenia, szyfrowane i bez śledzenia.",
+    "appSupport": "Wsparcie — {app} | Root & Pixel",
+    "appSupportDesc": "Pomoc dotycząca {app} – przewodniki, rozwiązywanie problemów i bezpośrednie wsparcie naszego zespołu.",
+    "imprint": {
+      "title": "Impressum — Root & Pixel",
+      "description": "Impressum i dane identyfikacyjne Root & Pixel."
+    },
+    "privacy": {
+      "title": "Polityka prywatności — Root & Pixel",
+      "description": "Polityka prywatności Root & Pixel."
+    },
+    "notFound": {
+      "title": "404 — Root & Pixel",
+      "description": "Nie znaleziono żądanej strony."
+    }
+  },
+  "process": {
+    "eyebrow": "Jak budujemy",
+    "title": "Od pomysłu do aplikacji, którą kochasz",
+    "steps": [
+      {
+        "title": "Pomysł i badania",
+        "description": "Zaczynamy od realnych potrzeb i tworzymy jasną koncepcję każdej aplikacji."
+      },
+      {
+        "title": "Design",
+        "description": "Projektujemy intuicyjne, piękne interfejsy, które są naturalne w użyciu."
+      },
+      {
+        "title": "Rozwój",
+        "description": "Tworzymy z czystym kodem i bezpieczeństwem wbudowanym od początku."
+      },
+      {
+        "title": "Testy i premiera",
+        "description": "Testujemy dokładnie, wydajemy niezawodne aktualizacje i ciągle ulepszamy."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "O nas",
+    "title": "Technologia spotyka design.",
+    "intro": "Root & Pixel to niezależne studio aplikacji tworzące własne produkty.",
+    "body1": "Nie oferujemy zewnętrznych usług. Zamiast tego całą energię wkładamy we własne aplikacje – od pierwszego pomysłu po premierę i dalej.",
+    "body2": "W naszym zespole jest dedykowany ekspert ds. cyberbezpieczeństwa. Bezpieczeństwo i prywatność są projektowane w każdej aplikacji, a nie dodawane później.",
+    "areas": {
+      "engineering": "Inżynieria",
+      "product": "Myślenie produktowe",
+      "ux": "UI/UX Design",
+      "mobile": "Rozwój mobilny",
+      "backend": "Backend engineering",
+      "security": "Cyberbezpieczeństwo"
+    },
+    "stats": {
+      "userFocus": {
+        "value": "100%",
+        "label": "Skupienie na użytkowniku",
+        "caption": "Design, który stawia ludzi na pierwszym miejscu."
+      },
+      "oneProduct": {
+        "value": "iOS + Android",
+        "label": "Jedno rozwiązanie",
+        "caption": "Jeden kod, jedno doświadczenie, obie platformy."
+      },
+      "reliable": {
+        "value": "24/7",
+        "label": "Niezawodna infrastruktura",
+        "caption": "Stabilna, monitorowana i zawsze dostępna."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Pytania o nasze aplikacje?",
+    "subtitle": "Potrzebujesz pomocy, masz opinię lub zgłoszenie dotyczące bezpieczeństwa? Jesteśmy dla Ciebie.",
+    "primaryCta": "Skontaktuj się",
+    "email": "hello@rootandpixel.com"
+  },
+  "footer": {
+    "columns": {
+      "nav": "Nawigacja",
+      "apps": "Aplikacje",
+      "legal": "Informacje prawne"
+    },
+    "legal": {
+      "imprint": "Impressum",
+      "privacy": "Polityka prywatności"
+    },
+    "rights": "Wszelkie prawa zastrzeżone."
+  },
+  "store": {
+    "appleShort": "App Store",
+    "googleShort": "Google Play",
+    "appleLabel": "Zobacz w App Store",
+    "googleLabel": "Zobacz w Google Play",
+    "comingSoon": "Wkrótce"
+  },
+  "notFound": {
+    "title": "Nie znaleziono strony",
+    "text": "Strona, której szukasz, nie istnieje – lub została przeniesiona.",
+    "home": "Wróć na stronę główną"
+  },
+  "legalPages": {
+    "imprint": {
+      "title": "Impressum",
+      "intro": "Informacje zgodnie z wymogami dotyczącymi identyfikacji podmiotu.",
+      "items": [
+        "Root & Pixel – Florian Zasada",
+        "hello@rootandpixel.com"
+      ]
+    },
+    "privacy": {
+      "title": "Polityka prywatności",
+      "blocks": [
+        {
+          "heading": "Administrator danych",
+          "text": "Odpowiedzialny za przetwarzanie danych na tej stronie: Root & Pixel – hello@rootandpixel.com."
+        },
+        {
+          "heading": "Hosting i logi serwera",
+          "text": "Podczas wizyty na tej stronie dostawca hostingu przetwarza dane techniczne (np. adres IP, user agent, czas). Dane te nie są wykorzystywane do celów marketingowych."
+        },
+        {
+          "heading": "Pamięć lokalna",
+          "text": "Twój wybór języka jest przechowywany lokalnie w przeglądarce. Nie używamy funkcjonalnych plików cookie ani usług śledzących."
+        },
+        {
+          "heading": "Twoje prawa",
+          "text": "Masz prawo do dostępu, sprostowania i usunięcia swoich danych. Kontakt: hello@rootandpixel.com."
+        }
+      ]
+    }
+  }
+}
