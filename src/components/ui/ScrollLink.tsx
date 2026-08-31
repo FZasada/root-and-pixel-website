@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 interface ScrollLinkProps {
-  /** Route path with optional hash, e.g. "/#services". */
+  /** Route path with an optional in-page section id, e.g. "/#services". */
   to: string;
   children: React.ReactNode;
   className?: string;
@@ -11,9 +11,9 @@ interface ScrollLinkProps {
 }
 
 /**
- * Navigates to a route and smooth-scrolls to the hash target.
- * Same-page links scroll without a page transition; cross-page links
- * navigate first and then scroll once the target is rendered.
+ * Navigates to a route and smooth-scrolls to a section within it.
+ * Same-page links scroll immediately; cross-page links navigate first,
+ * then scroll once the target has rendered.
  */
 export function ScrollLink({ to, children, className, onClick, ariaLabel }: ScrollLinkProps) {
   const navigate = useNavigate();
@@ -23,32 +23,26 @@ export function ScrollLink({ to, children, className, onClick, ariaLabel }: Scro
     (e: React.MouseEvent) => {
       onClick?.();
       const [path, hash] = to.split("#");
-      const id = hash ? `#${hash}` : null;
-
-      if (!id) {
-        navigate(to);
-        return;
-      }
+      const sectionId = hash || null;
 
       const scroll = () => {
-        const el = document.getElementById(id.slice(1));
+        if (!sectionId) return;
+        const el = document.getElementById(sectionId);
         if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
       };
 
-      if (location.pathname === path && path !== "/") {
-        navigate(`${path}${id}`);
-        window.setTimeout(scroll, 60);
-        return;
-      }
-
       if (location.pathname === path) {
         e.preventDefault();
+        if (!sectionId) {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          return;
+        }
         scroll();
-        history.replaceState(null, "", `${path}${id}`);
         return;
       }
 
-      navigate(`${path}${id}`);
+      e.preventDefault();
+      navigate(path);
       window.setTimeout(scroll, 90);
     },
     [to, navigate, location.pathname, onClick]

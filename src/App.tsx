@@ -1,7 +1,7 @@
 import { MotionConfig } from "framer-motion";
 import { lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import { Footer } from "./components/Footer/Footer";
 import { Navbar } from "./components/Navbar/Navbar";
@@ -57,7 +57,7 @@ function SkipLink() {
 export default function App() {
   return (
     <MotionConfig reducedMotion="user">
-      <BrowserRouter>
+      <HashRouter>
         <ScrollManager />
         <SkipLink />
         <Navbar />
@@ -76,7 +76,7 @@ export default function App() {
           </Suspense>
         </main>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </MotionConfig>
   );
 }
