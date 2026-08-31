@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import { cn } from "../../lib/cn";
+import { ScrollLink } from "./ScrollLink";
 
 type Variant = "primary" | "secondary" | "ghost";
 type Size = "md" | "lg";
@@ -79,6 +80,20 @@ export function Button(props: ButtonProps) {
   );
 
   if ("to" in props && props.to !== undefined) {
+    // Hash targets need smooth-scroll handling (react-router's <Link> only
+    // updates the URL and doesn't scroll for same-page hash changes).
+    if (props.to.includes("#")) {
+      return (
+        <ScrollLink
+          to={props.to}
+          className={classes}
+          ariaLabel={ariaLabel}
+          onClick={props.onClick}
+        >
+          {inner}
+        </ScrollLink>
+      );
+    }
     return (
       <Link to={props.to} className={classes} aria-label={ariaLabel} onClick={props.onClick}>
         {inner}

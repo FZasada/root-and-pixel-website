@@ -45,6 +45,12 @@ export function ContactForm() {
 
   const canSend = state.message.trim().length > 0;
 
+  const handleSubmit = () => {
+    if (!canSend) return;
+    setSent(true);
+    setState({ name: "", email: "", message: "" });
+  };
+
   return (
     <form className="grid gap-5 rounded-[2rem] border border-white/10 bg-white/5 p-8 text-left sm:grid-cols-2 sm:p-10">
       <Field label={t("contactForm.name")}>
@@ -85,7 +91,7 @@ export function ContactForm() {
       <div className="flex flex-col gap-3 sm:col-span-2 sm:flex-row sm:items-center">
         <a
           href={mailtoHref}
-          onClick={() => canSend && setSent(true)}
+          onClick={handleSubmit}
           aria-disabled={!canSend}
           className={cn(
             "inline-flex items-center justify-center gap-2.5 rounded-full px-7 py-3.5 text-base font-semibold text-white shadow-lg transition-all duration-300",
