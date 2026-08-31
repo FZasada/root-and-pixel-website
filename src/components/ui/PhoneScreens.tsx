@@ -1,5 +1,4 @@
 import {
-  Activity,
   BatteryFull,
   ChartColumn,
   Heart,
@@ -222,99 +221,6 @@ export function StatsScreen() {
   );
 }
 
-function FitnessScreen() {
-  const week = [46, 70, 52, 88, 64, 96, 78];
-  return (
-    <div className="flex h-full flex-col bg-ink-900 text-white">
-      <StatusBar dark />
-      <div className="flex flex-col gap-4 px-5 pt-3">
-        <div>
-          <p className="text-[11px] text-white/50">Weekly Active</p>
-          <p className="text-[20px] font-bold tracking-tight">
-            5.2 h <span className="text-[12px] font-medium text-white/50">trainingszeit</span>
-          </p>
-        </div>
-        <div className="rounded-2xl bg-white/[0.06] p-4">
-          <div className="flex items-center justify-center gap-1.5 text-[11px] text-white/60">
-            <Activity className="h-3.5 w-3.5 text-[#34d399]" />
-            <span className="font-semibold text-[#34d399]">2.418</span>
-            <span>kcal burned</span>
-          </div>
-          <div className="mt-3 flex h-20 items-end gap-1.5" aria-hidden="true">
-            {week.map((h, i) => (
-              <div
-                key={i}
-                className={cn(
-                  "flex-1 rounded-t-[4px]",
-                  i === 5 ? "bg-gradient-to-t from-[#0ea5e9] to-[#34d399]" : "bg-white/10"
-                )}
-                style={{ height: `${h}%` }}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="flex items-center justify-between rounded-2xl bg-white/[0.06] p-3.5">
-          <div>
-            <p className="text-[12px] font-semibold">Weekly Goal</p>
-            <p className="text-[10.5px] text-white/50">Sessions 4 / 5</p>
-          </div>
-          <svg viewBox="0 0 40 40" className="h-11 w-11 -rotate-90" aria-hidden="true">
-            <circle cx="20" cy="20" r="16" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="5" />
-            <circle
-              cx="20" cy="20" r="16" fill="none" stroke="url(#fg)" strokeWidth="5" strokeLinecap="round"
-              strokeDasharray={`${0.8 * 100.5} 100.5`}
-            />
-            <linearGradient id="fg" x1="0" y1="0" x2="40" y2="40">
-              <stop stopColor="#34d399" />
-              <stop offset="1" stopColor="#0ea5e9" />
-            </linearGradient>
-          </svg>
-        </div>
-      </div>
-      <TabBar dark />
-    </div>
-  );
-}
-
-function FinanceScreen() {
-  const cats = [
-    { label: "Groceries", pct: 78, color: "bg-[#60a5fa]" },
-    { label: "Rent", pct: 52, color: "bg-[#2563eb]" },
-    { label: "Transport", pct: 34, color: "bg-[#93c5fd]" },
-  ];
-  return (
-    <div className="flex h-full flex-col bg-ink-900 text-white">
-      <StatusBar dark />
-      <div className="flex flex-col gap-4 px-5 pt-3">
-        <div className="rounded-2xl bg-gradient-to-br from-[#60a5fa] to-[#2563eb] p-4 text-white">
-          <p className="text-[10.5px] font-medium text-white/70">Total Balance</p>
-          <p className="mt-1 text-[26px] font-bold tracking-tight">$12,480</p>
-          <p className="mt-1 inline-flex rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-semibold">
-            +12.4% this month
-          </p>
-        </div>
-        <div>
-          <p className="text-[11px] font-semibold text-white/90">Monthly Spending</p>
-          <div className="mt-2 flex flex-col gap-2.5">
-            {cats.map((c) => (
-              <div key={c.label}>
-                <div className="flex justify-between text-[10.5px]">
-                  <span className="text-white/70">{c.label}</span>
-                  <span className="text-white/40">{c.pct}%</span>
-                </div>
-                <div className="mt-1 h-1.5 rounded-full bg-white/10">
-                  <div className={cn("h-full rounded-full", c.color)} style={{ width: `${c.pct}%` }} />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <TabBar dark />
-    </div>
-  );
-}
-
 interface PhoneScreenProps {
   variant: ScreenVariant;
   className?: string;
@@ -324,8 +230,6 @@ export function PhoneScreen({ variant, className }: PhoneScreenProps) {
   return (
     <div className={cn("h-full", className)}>
       {variant === "memories" && <MemoriesScreen />}
-      {variant === "fitness" && <FitnessScreen />}
-      {variant === "finance" && <FinanceScreen />}
     </div>
   );
 }

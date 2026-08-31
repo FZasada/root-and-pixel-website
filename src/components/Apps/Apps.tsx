@@ -12,7 +12,6 @@ import { StoreBadge } from "../ui/StoreBadge";
 
 function CardBadges({ app }: { app: AppInfo }) {
   const { t } = useTranslation();
-  const name = t(`${app.i18nKey}.name`);
 
   if (app.comingSoon) {
     return (
@@ -27,12 +26,12 @@ function CardBadges({ app }: { app: AppInfo }) {
     <span className="flex flex-wrap gap-2">
       <StoreBadge
         platform="apple"
-        href={appStoreHref(name, "apple")}
+        href={appStoreHref(app, "apple")}
         label={t("store.appleShort")}
       />
       <StoreBadge
         platform="google"
-        href={appStoreHref(name, "google")}
+        href={appStoreHref(app, "google")}
         label={t("store.googleShort")}
       />
     </span>

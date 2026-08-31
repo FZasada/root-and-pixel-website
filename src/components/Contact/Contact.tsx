@@ -1,8 +1,9 @@
-import { ArrowUpRight, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import { CONTACT_EMAIL } from "../../data/apps";
 import { Reveal } from "../ui/Reveal";
+import { ContactForm } from "./ContactForm";
 
 export function Contact() {
   const { t } = useTranslation();
@@ -38,20 +39,11 @@ export function Contact() {
               {t("contact.subtitle")}
             </p>
 
-            <div className="mt-6 flex flex-col items-center gap-4">
+            <div className="mt-6 w-full max-w-2xl">
+              <ContactForm />
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
-                className="group inline-flex items-center gap-2.5 rounded-full bg-premium-gradient px-8 py-4 text-base font-semibold text-white shadow-[0_12px_36px_-10px_rgba(124,92,255,0.65)] transition-all duration-300 hover:brightness-110 hover:shadow-[0_16px_44px_-10px_rgba(124,92,255,0.8)] active:scale-[0.98]"
-              >
-                {t("contact.primaryCta")}
-                <ArrowUpRight
-                  className="h-4.5 w-4.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-                  aria-hidden="true"
-                />
-              </a>
-              <a
-                href={`mailto:${CONTACT_EMAIL}`}
-                className="inline-flex items-center gap-2 text-[15px] font-medium text-white/60 transition-colors hover:text-white"
+                className="mt-6 inline-flex items-center gap-2 text-[15px] font-medium text-white/60 transition-colors hover:text-white"
               >
                 <Mail className="h-4 w-4" aria-hidden="true" />
                 {t("contact.email")}

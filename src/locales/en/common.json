@@ -147,194 +147,6 @@
           ]
         }
       }
-    },
-    "fittrack": {
-      "name": "FitTrack",
-      "tagline": "We bring fitness, progress and motivation together.",
-      "description": "FitTrack makes your training measurable. Track workouts, progress and habits in one clear, motivating app.",
-      "overviewLink": "Overview",
-      "privacyLink": "Privacy",
-      "supportLink": "Support",
-      "features": [
-        {
-          "title": "Track progress",
-          "text": "Workouts and progress in one place – from your very first session."
-        },
-        {
-          "title": "Set goals",
-          "text": "Personal goals, daily habits and measurable results."
-        },
-        {
-          "title": "Stay motivated",
-          "text": "Clear stats and rewards that keep you going."
-        }
-      ],
-      "benefits": [
-        "All workouts in one app",
-        "Clear, simple stats",
-        "Personal goals",
-        "Works offline"
-      ],
-      "ctaTitle": "Make progress you can see.",
-      "ctaSub": "FitTrack is launching soon. Join the launch.",
-      "privacy": {
-        "eyebrow": "Privacy",
-        "title": "Your progress stays private",
-        "subtitle": "FitTrack is built around your data – it stays yours.",
-        "sections": [
-          {
-            "heading": "Private by design",
-            "text": "Your training data stays in your private space. Nothing is shared, profiled or sold."
-          },
-          {
-            "heading": "Encrypted",
-            "text": "Your data is encrypted in transit and at rest, so only you can see your workouts."
-          },
-          {
-            "heading": "No tracking, no ads",
-            "text": "FitTrack has no trackers and no advertising. We never profile you or sell your data."
-          },
-          {
-            "heading": "Your data, your control",
-            "text": "Export or delete your training data at any time. Your data stays under your control."
-          }
-        ],
-        "ctaTitle": "Questions about privacy?",
-        "ctaSub": "Our team is happy to help with anything related to your data.",
-        "ctaLabel": "Contact us"
-      },
-      "support": {
-        "eyebrow": "Support",
-        "title": "We're here to help with FitTrack",
-        "subtitle": "Find answers, report issues and reach our team directly.",
-        "sections": [
-          {
-            "heading": "Getting started",
-            "text": "Set up your account and start tracking your first workout in no time."
-          },
-          {
-            "heading": "Goals & stats",
-            "text": "Learn how to set goals and read your progress at a glance."
-          },
-          {
-            "heading": "Reporting issues",
-            "text": "Something not working as expected? Tell us and we'll fix it quickly."
-          }
-        ],
-        "ctaTitle": "Still need a hand?",
-        "ctaSub": "Write to us and we'll get back to you shortly.",
-        "ctaLabel": "Write to support",
-        "faq": {
-          "items": [
-            {
-              "question": "How do I start tracking a workout?",
-              "answer": "Open FitTrack, tap the plus button and choose your workout type. Your first session starts right away."
-            },
-            {
-              "question": "Is my training data private?",
-              "answer": "Yes. Your training data is encrypted and never shared, profiled or sold."
-            },
-            {
-              "question": "Does FitTrack work offline?",
-              "answer": "Yes. FitTrack is designed to work offline, so you can train anywhere."
-            }
-          ]
-        }
-      }
-    },
-    "finwhiz": {
-      "name": "FinWhiz",
-      "tagline": "Keep an eye on your finances and make better decisions.",
-      "description": "FinWhiz gives you clarity about your money. Expenses, budgets and goals – clear, understandable, smart.",
-      "overviewLink": "Overview",
-      "privacyLink": "Privacy",
-      "supportLink": "Support",
-      "features": [
-        {
-          "title": "Understand spending",
-          "text": "See at a glance where your money goes – automatically categorized."
-        },
-        {
-          "title": "Plan budgets",
-          "text": "Set budgets that fit your life and stay on track."
-        },
-        {
-          "title": "Decide better",
-          "text": "Clear insights help you make the right financial decisions."
-        }
-      ],
-      "benefits": [
-        "Automatic categorization",
-        "Intuitive budgets",
-        "Privacy first",
-        "Encrypted"
-      ],
-      "ctaTitle": "Take control of your finances.",
-      "ctaSub": "FinWhiz is launching soon. Join the launch.",
-      "privacy": {
-        "eyebrow": "Privacy",
-        "title": "Your finances stay confidential",
-        "subtitle": "FinWhiz treats your financial data with the highest level of care.",
-        "sections": [
-          {
-            "heading": "Confidential by design",
-            "text": "Your financial data stays in your private space. Nothing is shared, profiled or sold."
-          },
-          {
-            "heading": "Strong encryption",
-            "text": "Your data is encrypted in transit and at rest, so only you can see your finances."
-          },
-          {
-            "heading": "Minimal data",
-            "text": "We only store what we need to run the app – never more."
-          },
-          {
-            "heading": "Your data, your control",
-            "text": "Export or delete your financial data at any time. Your data stays under your control."
-          }
-        ],
-        "ctaTitle": "Questions about privacy?",
-        "ctaSub": "Our team is happy to help with anything related to your data.",
-        "ctaLabel": "Contact us"
-      },
-      "support": {
-        "eyebrow": "Support",
-        "title": "We're here to help with FinWhiz",
-        "subtitle": "Find answers, report issues and reach our team directly.",
-        "sections": [
-          {
-            "heading": "Getting started",
-            "text": "Set up your account and connect your finances in just a few steps."
-          },
-          {
-            "heading": "Budgets & insights",
-            "text": "Learn how to set budgets and understand your spending at a glance."
-          },
-          {
-            "heading": "Reporting issues",
-            "text": "Something not working as expected? Tell us and we'll fix it quickly."
-          }
-        ],
-        "ctaTitle": "Still need a hand?",
-        "ctaSub": "Write to us and we'll get back to you shortly.",
-        "ctaLabel": "Write to support",
-        "faq": {
-          "items": [
-            {
-              "question": "How do I connect my finances?",
-              "answer": "Open FinWhiz and follow the setup flow to safely connect your accounts in a few steps."
-            },
-            {
-              "question": "Is my financial data confidential?",
-              "answer": "Yes. Your financial data is encrypted and treated with the highest confidentiality."
-            },
-            {
-              "question": "Can I export or delete my data?",
-              "answer": "Yes. You can export or delete your financial data at any time from your account settings."
-            }
-          ]
-        }
-      }
     }
   },
   "appsOverview": {
@@ -393,19 +205,11 @@
     },
     "apps": {
       "title": "Apps & Products — Root & Pixel",
-      "description": "Discover the apps by Root & Pixel: nomi, FitTrack and FinWhiz – mobile products crafted with attention to detail."
+      "description": "Discover the apps by Root & Pixel: nomi – mobile products crafted with attention to detail."
     },
     "nomi": {
       "title": "nomi — Preserve your memories | Root & Pixel",
       "description": "nomi is your private home for memories. Store photos, moments and stories safely and relive them anytime."
-    },
-    "fittrack": {
-      "title": "FitTrack — Fitness & Progress | Root & Pixel",
-      "description": "FitTrack brings fitness, progress and motivation together. Track workouts and goals in one clear app."
-    },
-    "finwhiz": {
-      "title": "FinWhiz — Keep an eye on your money | Root & Pixel",
-      "description": "FinWhiz gives you clarity about your finances. Expenses, budgets and goals – clear, understandable, smart."
     },
     "appPrivacy": "Privacy — {app} | Root & Pixel",
     "appPrivacyDesc": "How {app} protects your data – private by design, encrypted and free of tracking.",
@@ -484,6 +288,16 @@
     "subtitle": "Need help, have feedback or a security concern? We're here for you.",
     "primaryCta": "Get in touch",
     "email": "hello@rootandpixel.com"
+  },
+  "contactForm": {
+    "name": "Your name",
+    "namePlaceholder": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+    "messagePlaceholder": "Tell us what's on your mind…",
+    "submit": "Send via email",
+    "note": "This opens your email app with your message ready to send.",
+    "sent": "Your message is ready — just hit send in your email app."
   },
   "footer": {
     "columns": {
