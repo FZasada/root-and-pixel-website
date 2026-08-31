@@ -104,13 +104,13 @@ export function AppPage() {
                       platform="apple"
                       variant="light"
                       label={t("store.appleShort")}
-                      href={appStoreHref(name, "apple")}
+                      href={appStoreHref(app, "apple")}
                     />
                     <StoreBadge
                       platform="google"
                       variant="light"
                       label={t("store.googleShort")}
-                      href={appStoreHref(name, "google")}
+                      href={appStoreHref(app, "google")}
                     />
                   </>
                 )}
@@ -247,13 +247,13 @@ export function AppPage() {
                         platform="apple"
                         variant="light"
                         label={t("store.appleShort")}
-                        href={appStoreHref(name, "apple")}
+                        href={appStoreHref(app, "apple")}
                       />
                       <StoreBadge
                         platform="google"
                         variant="light"
                         label={t("store.googleShort")}
-                        href={appStoreHref(name, "google")}
+                        href={appStoreHref(app, "google")}
                       />
                     </>
                   )}

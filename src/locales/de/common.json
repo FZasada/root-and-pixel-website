@@ -147,194 +147,6 @@
           ]
         }
       }
-    },
-    "fittrack": {
-      "name": "FitTrack",
-      "tagline": "Wir bringen Fitness, Fortschritt und Motivation zusammen.",
-      "description": "FitTrack macht dein Training messbar. Verfolge Workouts, Fortschritt und Gewohnheiten in einer klaren, motivierenden App.",
-      "overviewLink": "Übersicht",
-      "privacyLink": "Datenschutz",
-      "supportLink": "Support",
-      "features": [
-        {
-          "title": "Fortschritt verfolgen",
-          "text": "Trainings und Fortschritt an einem Ort – von der ersten Session an."
-        },
-        {
-          "title": "Ziele setzen",
-          "text": "Persönliche Ziele, tägliche Gewohnheiten und messbare Ergebnisse."
-        },
-        {
-          "title": "Motiviert bleiben",
-          "text": "Klare Statistiken und Belohnungen, die dich am Ball halten."
-        }
-      ],
-      "benefits": [
-        "Alle Workouts in einer App",
-        "Verständliche Statistiken",
-        "Persönliche Ziele",
-        "Offline nutzbar"
-      ],
-      "ctaTitle": "Mach Fortschritte, die du sehen kannst.",
-      "ctaSub": "FitTrack ist bald verfügbar. Werde Teil des Launches.",
-      "privacy": {
-        "eyebrow": "Datenschutz",
-        "title": "Dein Fortschritt bleibt privat",
-        "subtitle": "FitTrack ist auf deine Daten ausgerichtet – sie bleiben deine.",
-        "sections": [
-          {
-            "heading": "Privat von Grund auf",
-            "text": "Deine Trainingsdaten bleiben in deinem privaten Bereich. Nichts wird geteilt, profiliert oder verkauft."
-          },
-          {
-            "heading": "Verschlüsselt",
-            "text": "Deine Daten werden während der Übertragung und im Ruhezustand verschlüsselt, sodass nur du deine Workouts siehst."
-          },
-          {
-            "heading": "Kein Tracking, keine Werbung",
-            "text": "FitTrack enthält keine Tracker und keine Werbung. Wir profilieren dich nicht und verkaufen deine Daten nicht."
-          },
-          {
-            "heading": "Deine Daten, deine Kontrolle",
-            "text": "Exportiere oder lösche deine Trainingsdaten jederzeit. Deine Daten bleiben unter deiner Kontrolle."
-          }
-        ],
-        "ctaTitle": "Fragen zum Datenschutz?",
-        "ctaSub": "Unser Team hilft dir gern bei allem rund um deine Daten.",
-        "ctaLabel": "Kontaktiere uns"
-      },
-      "support": {
-        "eyebrow": "Support",
-        "title": "Wir helfen dir gern mit FitTrack",
-        "subtitle": "Finde Antworten, melde Probleme und erreiche unser Team direkt.",
-        "sections": [
-          {
-            "heading": "Erste Schritte",
-            "text": "Richte dein Konto ein und starte im Handumdrehen dein erstes Workout."
-          },
-          {
-            "heading": "Ziele & Statistiken",
-            "text": "Erfahre, wie du Ziele setzt und deinen Fortschritt auf einen Blick liest."
-          },
-          {
-            "heading": "Probleme melden",
-            "text": "Etwas funktioniert nicht wie erwartet? Sag uns Bescheid und wir beheben es schnell."
-          }
-        ],
-        "ctaTitle": "Brauchst du noch Hilfe?",
-        "ctaSub": "Schreib uns und wir melden uns in Kürze bei dir.",
-        "ctaLabel": "Support schreiben",
-        "faq": {
-          "items": [
-            {
-              "question": "Wie starte ich mein erstes Workout?",
-              "answer": "Öffne FitTrack, tippe auf die Plus-Schaltfläche und wähle deine Trainingsart. Deine erste Session startet sofort."
-            },
-            {
-              "question": "Sind meine Trainingsdaten privat?",
-              "answer": "Ja. Deine Trainingsdaten sind verschlüsselt und werden nie geteilt, profiliert oder verkauft."
-            },
-            {
-              "question": "Funktioniert FitTrack offline?",
-              "answer": "Ja. FitTrack ist für die Offline-Nutzung ausgelegt, sodass du überall trainieren kannst."
-            }
-          ]
-        }
-      }
-    },
-    "finwhiz": {
-      "name": "FinWhiz",
-      "tagline": "Behalte deine Finanzen im Blick und treffe bessere Entscheidungen.",
-      "description": "FinWhiz gibt dir Klarheit über deine Finanzen. Ausgaben, Budgets und Ziele – übersichtlich, verständlich, smart.",
-      "overviewLink": "Übersicht",
-      "privacyLink": "Datenschutz",
-      "supportLink": "Support",
-      "features": [
-        {
-          "title": "Ausgaben verstehen",
-          "text": "Sieh auf einen Blick, wohin dein Geld fließt – automatisch kategorisiert."
-        },
-        {
-          "title": "Budgets planen",
-          "text": "Setze Budgets, die zu deinem Leben passen, und bleib im Rahmen."
-        },
-        {
-          "title": "Besser entscheiden",
-          "text": "Klare Einblicke helfen dir, die richtigen Finanzentscheidungen zu treffen."
-        }
-      ],
-      "benefits": [
-        "Automatische Kategorisierung",
-        "Intuitive Budgets",
-        "Datenschutz zuerst",
-        "Verschlüsselt"
-      ],
-      "ctaTitle": "Übernimm die Kontrolle über deine Finanzen.",
-      "ctaSub": "FinWhiz ist bald verfügbar. Werde Teil des Launches.",
-      "privacy": {
-        "eyebrow": "Datenschutz",
-        "title": "Deine Finanzen bleiben vertraulich",
-        "subtitle": "FinWhiz behandelt deine Finanzdaten mit höchster Sorgfalt.",
-        "sections": [
-          {
-            "heading": "Vertraulich von Grund auf",
-            "text": "Deine Finanzdaten bleiben in deinem privaten Bereich. Nichts wird geteilt, profiliert oder verkauft."
-          },
-          {
-            "heading": "Starke Verschlüsselung",
-            "text": "Deine Daten werden während der Übertragung und im Ruhezustand verschlüsselt, sodass nur du deine Finanzen siehst."
-          },
-          {
-            "heading": "Minimale Daten",
-            "text": "Wir speichern nur, was wir für den Betrieb der App benötigen – nie mehr."
-          },
-          {
-            "heading": "Deine Daten, deine Kontrolle",
-            "text": "Exportiere oder lösche deine Finanzdaten jederzeit. Deine Daten bleiben unter deiner Kontrolle."
-          }
-        ],
-        "ctaTitle": "Fragen zum Datenschutz?",
-        "ctaSub": "Unser Team hilft dir gern bei allem rund um deine Daten.",
-        "ctaLabel": "Kontaktiere uns"
-      },
-      "support": {
-        "eyebrow": "Support",
-        "title": "Wir helfen dir gern mit FinWhiz",
-        "subtitle": "Finde Antworten, melde Probleme und erreiche unser Team direkt.",
-        "sections": [
-          {
-            "heading": "Erste Schritte",
-            "text": "Richte dein Konto ein und verbinde deine Finanzen in wenigen Schritten."
-          },
-          {
-            "heading": "Budgets & Einblicke",
-            "text": "Erfahre, wie du Budgets setzt und deine Ausgaben auf einen Blick verstehst."
-          },
-          {
-            "heading": "Probleme melden",
-            "text": "Etwas funktioniert nicht wie erwartet? Sag uns Bescheid und wir beheben es schnell."
-          }
-        ],
-        "ctaTitle": "Brauchst du noch Hilfe?",
-        "ctaSub": "Schreib uns und wir melden uns in Kürze bei dir.",
-        "ctaLabel": "Support schreiben",
-        "faq": {
-          "items": [
-            {
-              "question": "Wie verbinde ich meine Finanzen?",
-              "answer": "Öffne FinWhiz und folge dem Einrichtungsprozess, um deine Konten in wenigen Schritten sicher zu verbinden."
-            },
-            {
-              "question": "Sind meine Finanzdaten vertraulich?",
-              "answer": "Ja. Deine Finanzdaten werden verschlüsselt und mit höchster Vertraulichkeit behandelt."
-            },
-            {
-              "question": "Kann ich meine Daten exportieren oder löschen?",
-              "answer": "Ja. Du kannst deine Finanzdaten jederzeit in deinen Kontoeinstellungen exportieren oder löschen."
-            }
-          ]
-        }
-      }
     }
   },
   "appsOverview": {
@@ -393,19 +205,11 @@
     },
     "apps": {
       "title": "Apps & Produkte — Root & Pixel",
-      "description": "Entdecke die Apps von Root & Pixel: nomi, FitTrack und FinWhiz – mobile Produkte mit Liebe zum Detail entwickelt."
+      "description": "Entdecke die Apps von Root & Pixel: nomi – mobile Produkte mit Liebe zum Detail entwickelt."
     },
     "nomi": {
       "title": "nomi — Erinnerungen bewahren | Root & Pixel",
       "description": "nomi ist dein privater Ort für Erinnerungen. Fotos, Momente und Geschichten sicher aufbewahren und jederzeit wieder erleben."
-    },
-    "fittrack": {
-      "title": "FitTrack — Fitness & Fortschritt | Root & Pixel",
-      "description": "FitTrack bringt Fitness, Fortschritt und Motivation zusammen. Verfolge Workouts und Ziele in einer klaren App."
-    },
-    "finwhiz": {
-      "title": "FinWhiz — Finanzen im Blick | Root & Pixel",
-      "description": "FinWhiz gibt dir Klarheit über deine Finanzen. Ausgaben, Budgets und Ziele – übersichtlich, verständlich, smart."
     },
     "appPrivacy": "Datenschutz — {app} | Root & Pixel",
     "appPrivacyDesc": "So schützt {app} deine Daten – privat von Grund auf, verschlüsselt und ohne Tracking.",
@@ -484,6 +288,16 @@
     "subtitle": "Brauchst du Hilfe, hast du Feedback oder einen Sicherheitshinweis? Wir sind für dich da.",
     "primaryCta": "Kontakt aufnehmen",
     "email": "hello@rootandpixel.com"
+  },
+  "contactForm": {
+    "name": "Dein Name",
+    "namePlaceholder": "Dein Name",
+    "email": "Deine E-Mail",
+    "message": "Deine Nachricht",
+    "messagePlaceholder": "Erzähl uns, was dich beschäftigt…",
+    "submit": "Per E-Mail senden",
+    "note": "Das öffnet deine E-Mail-App mit der fertigen Nachricht.",
+    "sent": "Deine Nachricht ist bereit – sende sie einfach in deiner E-Mail-App ab."
   },
   "footer": {
     "columns": {

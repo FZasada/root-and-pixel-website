@@ -49,12 +49,12 @@ function OverviewRow({ index }: { index: number }) {
               <>
                 <StoreBadge
                   platform="apple"
-                  href={appStoreHref(name, "apple")}
+                  href={appStoreHref(app, "apple")}
                   label={t("store.appleShort")}
                 />
                 <StoreBadge
                   platform="google"
-                  href={appStoreHref(name, "google")}
+                  href={appStoreHref(app, "google")}
                   label={t("store.googleShort")}
                 />
               </>

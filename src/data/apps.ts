@@ -1,18 +1,12 @@
 import {
-  Activity,
   CalendarHeart,
-  CircleDollarSign,
-  Flame,
   Heart,
-  PieChart,
   ShieldCheck,
   Sparkles,
-  Target,
-  TrendingUp,
   type LucideIcon,
 } from "lucide-react";
 
-export type ScreenVariant = "memories" | "fitness" | "finance";
+export type ScreenVariant = "memories";
 
 export interface AppInfo {
   slug: string;
@@ -31,6 +25,11 @@ export interface AppInfo {
   featureIcons: LucideIcon[];
   /** Static tech-stack labels shown on the app page. */
   tech: string[];
+  /** Store listing URLs. Open to the right store when a badge is clicked. */
+  stores: {
+    apple: string;
+    google: string;
+  };
 }
 
 export const apps: AppInfo[] = [
@@ -44,36 +43,17 @@ export const apps: AppInfo[] = [
     comingSoon: false,
     featureIcons: [Sparkles, CalendarHeart, ShieldCheck],
     tech: ["React Native", "Expo", "TypeScript", "Supabase", "AWS"],
-  },
-  {
-    slug: "fittrack",
-    i18nKey: "apps.fittrack",
-    icon: Activity,
-    tile: "from-[#34d399] to-[#0ea5e9]",
-    screen: "fitness",
-    accent: "#0ea5e9",
-    comingSoon: true,
-    featureIcons: [TrendingUp, Target, Flame],
-    tech: ["React Native", "Expo", "TypeScript", "Firebase", "Sentry"],
-  },
-  {
-    slug: "finwhiz",
-    i18nKey: "apps.finwhiz",
-    icon: TrendingUp,
-    tile: "from-[#60a5fa] to-[#2563eb]",
-    screen: "finance",
-    accent: "#2563eb",
-    comingSoon: true,
-    featureIcons: [PieChart, Target, CircleDollarSign],
-    tech: ["React Native", "TypeScript", "Node.js", "PostgreSQL", "AWS"],
+    stores: {
+      apple: "",
+      google: "",
+    },
   },
 ];
 
 export const CONTACT_EMAIL = "hello@rootandpixel.com";
 
-export function appStoreHref(appName: string, platform: "apple" | "google") {
-  const subject = `${appName} — ${platform === "apple" ? "App Store" : "Google Play"}`;
-  return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}`;
+export function appStoreHref(app: AppInfo, platform: "apple" | "google") {
+  return app.stores[platform];
 }
 
 export function getApp(slug: string): AppInfo | undefined {
