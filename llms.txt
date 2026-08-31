@@ -1,0 +1,102 @@
+# Root & Pixel Website
+
+> Marketing site for Root & Pixel, an independent app studio building its own mobile apps (currently the "nomi" memory app). Single-page React application with client-side routing, i18n and a Tailwind v4 design system.
+
+## Project
+
+- **Stack**: React 19, TypeScript 6, Vite 8, react-router-dom v7 (client-side SPA), Tailwind CSS v4 (via `@tailwindcss/vite`), Framer Motion 13, lucide-react, i18next + react-i18next.
+- **Purpose**: Promote "nomi" (the only shipped app). It is a static SPA with no backend; all "form" and store interactions resolve to `mailto:` links or external store URLs.
+- **Deployment**: GitHub Pages via `.github/workflows/deploy.yml` (on manual dispatch / release). Vite `base` is `/root-and-pixel-website/`. `vercel.json` rewrites all routes to `index.html`. Also has a `public/_redirects` netlify-style file.
+- **Production domain** hardcoded in `src/components/ui/SEO.tsx`: `https://rootandpixel.com`.
+
+### Project structure (src/)
+
+```
+src/
+  App.tsx                       # BrowserRouter + ScrollManager + Navbar + Routes + Footer
+  main.tsx                      # React root mount
+  index.css                     # Tailwind v4 @theme tokens + custom utilities
+  i18n/index.ts                 # i18next config (de/en/pl, localStorage detection)
+  lib/cn.ts                     # className merge helper (cn)
+  data/                         # Static data: apps.ts, nav.ts, process.ts, technologies.ts
+  locales/{de,en,pl}/common.json# Translations (single "common" namespace per language)
+  components/
+    Navbar/, Footer/, Hero/, Apps/, About/, Process/, Faq/,
+    TechnologyBar/, SecurityBanner/, Contact/ (Contact.tsx + ContactForm.tsx),
+    SupportForm/, ScrollManager.tsx
+    ui/                         # Reusable primitives (Button, Logo, StoreBadge, ScrollLink, Reveal, SEO, ...)
+  pages/
+    Home/Home.tsx               # Homepage composing all sections
+    Apps/ (AppsOverview.tsx, AppPage.tsx, AppLegal.tsx)
+    Legal/LegalPage.tsx         # /impressum & /datenschutz
+    NotFound/NotFound.tsx
+```
+
+### Scripts / commands
+
+```bash
+npm run dev       # start Vite dev server
+npm run build     # typecheck (tsc -b) + production build  <- run before finishing
+npm run lint      # oxlint
+npm run preview   # preview the production build
+```
+
+Always run `npm run build` after making changes and run `npm run lint`; both must pass (a pre-existing oxlint warning in `src/components/Navbar/Navbar.tsx:37` about `setState` in an effect is expected and not caused by new changes).
+
+## Docs
+
+- [Vite](https://vite.dev/guide/)
+- [React Router v7](https://reactrouter.com/)
+- [Tailwind CSS v4](https://tailwindcss.com/docs)
+- [i18next](https://www.i18next.com/) / [react-i18next](https://react.i18next.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [lucide-react icons](https://lucide.dev/)
+- [llms.txt specification](https://llmstxt.org/)
+
+## Reference
+
+- `package.json` — dependencies and scripts
+- `vite.config.ts` — React + Tailwind plugins, base path
+- `tsconfig.json` / `tsconfig.app.json` / `tsconfig.node.json` — TypeScript project references
+- `.oxlintrc.json` — lint rules
+- `.github/workflows/deploy.yml` — GitHub Pages deploy
+- `opencode.json` — GitHub MCP server config for this toolchain
+
+## Details
+
+### Design system & styling
+- **Theme tokens live in `src/index.css` `@theme`**: colors `ink` (near-black `#05070b` and `ink-950/900/800/700/600`), `muted`, `faint`, `accent` (purple `#7c5cff`, `accent-light` `#9d7bff`, `accent-dark` `#5b3ee0`), `blue-glow`, `surface` (white), `mist` (light gray), `line`. Plus shadows (`shadow-card`, `shadow-card-hover`, `shadow-phone`).
+- **Custom utilities defined with `@utility` in `index.css`**: `container-shell` (page width wrapper), `text-gradient` (purple gradient text), `bg-premium-gradient` (purple gradient background).
+- Use these tokens/utilities (e.g. `bg-ink`, `text-muted`, `bg-premium-gradient`, `container-shell`) rather than hardcoding colors.
+- Layout pattern: `<section className="bg-X py-24 lg:py-32"><div className="container-shell">...</div></section>`.
+- Rounded geometry (`rounded-2xl`/`rounded-[2rem]`), gradient pills for CTAs, subtle borders (`border-line` / `border-white/10`).
+
+### i18n
+- All user-facing strings MUST live in `src/locales/<lang>/common.json` and be fetched with `useTranslation()` (`t("key")`) and the `t("key.${dynamic}", { var })` interpolation pattern. Keep the three language files (de, en, pl) in sync — matching key structure is required (all three files are type-checked as JSON during `npm run build`).
+- Content uses i18n key bases. App content uses `apps.<slug>.*`, e.g. `apps.nomi.*`; SEO uses `seo.<slug>.*`.
+- Default/fallback language is `en`; language is persisted to `localStorage` under `rootpixel-lang` (see `src/i18n/index.ts`).
+- Validate JSON by parsing after edits: all three `common.json` files must remain valid JSON (a mismatched brace breaks the whole build).
+
+### Data / apps
+- `src/data/apps.ts` defines the `apps` array (`AppInfo`). Currently only `nomi` (`comingSoon: false`). Fields include `stores: { apple: string; google: string }` — **these store URLs are currently empty placeholders** and should be filled with the real App Store / Google Play links when available.
+- `appStoreHref(app, "apple" | "google")` returns the store URL from `app.stores`.
+- `CONTACT_EMAIL` (`hello@rootandpixel.com`) is used for `mailto:` links (contact form, support, notify-me).
+
+### Routing & scrolling
+- Routes defined in `src/App.tsx`: `/`, `/apps`, `/apps/:slug`, `/apps/:slug/privacy`, `/apps/:slug/support`, `/impressum`, `/datenschutz`, `*` (404).
+- `src/components/ScrollManager.tsx` scrolls to a hash target on navigation and to top otherwise.
+- `src/components/ui/ScrollLink.tsx` handles smooth scrolling for hash links (works same-page and cross-page).
+- `src/components/ui/Button.tsx`: when `to` contains a `#`, it automatically renders a `ScrollLink` (so `to="/#contact"` scrolls instead of just updating the URL) — do not route hash targets through a plain react-router `<Link>`.
+
+### Reusable UI primitives (`src/components/ui/`)
+- `Button` (`to`/`href`, variants `primary|secondary|ghost`, sizes `md|lg`, `arrow`)
+- `Logo` (`variant="light|dark"`, `withWordmark`, `iconOnly`) — monochrome R&P mark + wordmark
+- `StoreBadge` (`platform="apple|google"`, `variant="dark|light"`, `href`, `label`) — real brand SVGs
+- `ScrollLink`, `Reveal` (framer-motion scroll reveal), `SEO`, `SectionHeading`, `AppIconTile`, `DeviceFrame`, `PhoneScreen` (`variant: "memories"`), `LanguageSelector`
+
+### Gotchas / conventions
+- Do NOT add code comments unless asked; match existing code style.
+- Follow existing naming: components PascalCase in `src/components/<Name>/<Name>.tsx`, pages in `src/pages/<Page>/<Page>.tsx`, UI primitives in `src/components/ui/`.
+- No backend exists — real form submission is not possible; forms use `mailto:` (see `ContactForm.tsx`, `SupportForm.tsx`).
+- `index.html` has `lang="de"` set; runtime language is handled by i18next (`main.tsx`/`i18n`).
+- Static assets live in `public/`: `favicon.svg`, `og.svg` (social share), `robots.txt`, `sitemap.xml`, `_redirects`.
