@@ -2,20 +2,11 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 export function ScrollManager() {
-  const { pathname, hash } = useLocation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    if (hash) {
-      const el = document.getElementById(hash.slice(1));
-      if (el) {
-        requestAnimationFrame(() => {
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
-        });
-        return;
-      }
-    }
     window.scrollTo({ top: 0, left: 0 });
-  }, [pathname, hash]);
+  }, [pathname]);
 
   return null;
 }

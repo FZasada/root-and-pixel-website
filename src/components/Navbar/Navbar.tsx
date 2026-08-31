@@ -35,7 +35,7 @@ export function Navbar() {
 
   useEffect(() => {
     setOpen(false);
-  }, [location.pathname, location.hash]);
+  }, [location.pathname]);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -76,14 +76,9 @@ export function Navbar() {
           <div className="hidden items-center gap-1 lg:flex">
             {navItems.map((item) => {
               const isApps = item.to === "/apps";
-              const active =
-                isApps
-                  ? location.pathname.startsWith("/apps")
-                  : location.pathname === item.to &&
-                    (item.hash
-                      ? location.hash === `#${item.hash}` ||
-                        (item.hash === "home" && location.hash === "")
-                      : true);
+              const active = isApps
+                ? location.pathname.startsWith("/apps")
+                : location.pathname === item.to;
               const target = `${item.to}${item.hash ? `#${item.hash}` : ""}`;
               return (
                 <ScrollLink
