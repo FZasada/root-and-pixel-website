@@ -30,7 +30,7 @@ export function SupportForm({ appName }: SupportFormProps) {
     const topicLabel = t(`supportForm.topics.${state.topic}`);
     const subject = `${appName} — ${topicLabel}`;
     const body = [
-      state.name || t("supportForm.email.placeholderName"),
+      state.name || t("supportForm.placeholderName"),
       "",
       `${t("supportForm.email.topic")}: ${topicLabel}`,
       `${t("supportForm.email.message")}:`,
@@ -58,7 +58,7 @@ export function SupportForm({ appName }: SupportFormProps) {
             type="text"
             value={state.name}
             onChange={(e) => update("name")(e.target.value)}
-            placeholder={t("supportForm.email.placeholderName")}
+            placeholder={t("supportForm.placeholderName")}
             className={inputClass}
             autoComplete="name"
           />
@@ -96,7 +96,7 @@ export function SupportForm({ appName }: SupportFormProps) {
             <textarea
               value={state.message}
               onChange={(e) => update("message")(e.target.value)}
-              placeholder={t("supportForm.email.placeholderMessage")}
+              placeholder={t("supportForm.placeholderMessage")}
               rows={5}
               className={cn(inputClass, "resize-y")}
               required
